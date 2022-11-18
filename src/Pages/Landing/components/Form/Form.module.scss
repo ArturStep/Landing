@@ -1,0 +1,83 @@
+.form {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 800px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #353030;
+  font-family: sans-serif;
+  h1 {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+
+    color: #353030;
+    background: linear-gradient(to bottom,#f2dc50 5%,#ffab23 100%);
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin: 5px auto;
+    line-height: 1.4em;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      padding: 10px;
+      margin: 8px 0;
+      width: 250px;
+      height: 50px;
+
+      border: 1px solid #d6b870;
+      border-radius: 3px;
+      background-color: #fff;
+      font-size: 20px;
+      line-height: 19px;
+      box-sizing: border-box;
+      box-shadow: inset 1px 1px 3px rgb(1 1 1 / 35%);
+
+      &::placeholder {
+        font-size: 20px;
+      }
+    }
+
+    label {
+      font-size: 12px;
+      position: relative;
+      right: 132px!important;
+    }
+
+    button {
+      display: inline-block;
+      padding: 7px 24px;
+      margin: 15px;
+
+      background: -webkit-gradient(linear,left top,left bottom,color-stop(.05,#f2dc50),color-stop(1,#ffab23));
+      color: #000!important;
+      border-radius: 7px;
+      border: 1px solid #fa2;
+      font-size: 30px;
+      font-weight: 700;
+      text-decoration: none;
+
+      -webkit-animation: 5s infinite swing;
+      animation: 5s infinite swing;
+      transition: .2s;
+      box-shadow: 0 0 2px #bc0000;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    max-width: 80%;
+    margin: 5px auto 0;
+    font-size: 11px;
+  }
+}

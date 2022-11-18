@@ -1,0 +1,15 @@
+.footer_content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_list_item {
+    margin: 5px;
+
+    font-size: 11px;
+}
