@@ -25,3 +25,24 @@
     letter-spacing: -1px;
   }
 }
+
+@media only screen and (max-device-width: 900px) {
+  .header {
+    margin: 0 auto;
+    width: 80%;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      line-height: 3.5rem;
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+  }
+}
+

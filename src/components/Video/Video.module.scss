@@ -1,0 +1,17 @@
+.video {
+  margin: 40px;
+  width: 800px;
+  height: 450px;
+}
+
+@media only screen and (max-device-width: 900px) {
+  .video {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .video {
+    height: 300px;
+  }
+}

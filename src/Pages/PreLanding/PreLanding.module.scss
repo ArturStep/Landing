@@ -8,3 +8,12 @@
     font-weight: 700;
     font-family: Lato, sans-serif
 }
+
+@media only screen and (max-device-width: 900px) {
+    .header {
+        margin: 20px auto 0 auto;
+        width: 80%;
+
+        font-size: 24px;
+    }
+}

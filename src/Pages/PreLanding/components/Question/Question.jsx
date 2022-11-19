@@ -2,10 +2,8 @@ import s from './Question.module.scss'
 import {useState} from "react";
 
 const Question = ({setQuestions}) => {
-  const [nextStep, setNextStep] = useState(null)
+  const [nextStep, setNextStep] = useState(false)
   const [value, setValue] = useState('3')
-
-  console.log(value)
 
   const handleChange = (e) => {
     setValue(e.target.value)
@@ -17,20 +15,14 @@ const Question = ({setQuestions}) => {
     }
   }
 
-  if (nextStep === false) {
-    return <div className={s.root}>
-      <h3>Goodbye :)</h3>
-    </div>
-  }
-
   return (
     <div className={s.root}>
-      {nextStep === null ?
+      {nextStep === false ?
         <div className={s.firstQ}>
           <h2>Are you above 18?</h2>
           <section>
             <button onClick={() => setNextStep(true)}>Yes</button>
-            <button onClick={() => setNextStep(false)}>No</button>
+            <button onClick={() => setNextStep(true)}>No</button>
           </section>
         </div>
         :

@@ -1,9 +1,14 @@
-import s from './Link.module.scss';
+import s from './NextPageBtn.module.scss';
+import {NavLink} from "react-router-dom";
 
-const Link = () => {
+const NextPageBtn = () => {
   return (
-    <button className={s.link}>Get Started Now</button>
+    <NavLink to={'/landing'}>
+      <button className={s.link} onClick={() => window.scrollTo(0, 0)}>
+        Get Started Now
+      </button>
+    </NavLink>
   )
 }
 
-export default Link;
+export default NextPageBtn;

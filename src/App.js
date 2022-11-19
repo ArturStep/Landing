@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from 'react-router-dom'
 
-function App() {
+import PreLanding from "./Pages/PreLanding/PreLanding";
+import Landing from "./Pages/Landing/Landing";
+import Terms from "./Pages/HelpPages/Terms";
+import Disclaimer from "./Pages/HelpPages/Disclaimer";
+import Privacy from "./Pages/HelpPages/Privacy";
+
+import './App.scss';
+
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path={'/'} element={<PreLanding/>} />
+        <Route path={'/landing'} element={<Landing/>} />
+        <Route path={'/terms'} element={<Terms/>} />
+        <Route path={'/disclaimer'} element={<Disclaimer/>} />
+        <Route path={'/privacy'} element={<Privacy/>} />
+      </Routes>
     </div>
   );
 }

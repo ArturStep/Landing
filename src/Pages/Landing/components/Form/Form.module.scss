@@ -31,7 +31,7 @@
 
     input {
       padding: 10px;
-      margin: 8px 0;
+      margin: 4px 0;
       width: 250px;
       height: 50px;
 
@@ -81,3 +81,28 @@
     font-size: 11px;
   }
 }
+
+@keyframes swing {
+  20%, 60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  40%, 80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+@media only screen and (max-device-width: 900px) {
+  .form {
+    width: 80%;
+  }
+}
+
+
