@@ -4,7 +4,7 @@ const Disclaimer = () => {
   return (
     <div style={{backgroundColor: "#fff", height: "100vh"}}>
       <div className="wrapper"
-           style={{textAlign: "initial", color: "#000", maxWidth: "1000px", margin: "0 auto", fontFamily: "sans-serif", lineHeight: "1.5em"}}>
+           style={{textAlign: "initial", color: "#000", maxWidth: "80%", margin: "0 auto", fontFamily: "sans-serif", lineHeight: "1.5em"}}>
         <h3 style={{fontWeight: "bolder", fontSize: "20px", padding: "20px 0"}}>
           LEGAL DISCLAIMER:
         </h3>

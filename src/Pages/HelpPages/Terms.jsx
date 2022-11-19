@@ -4,7 +4,7 @@ function Terms(props) {
   return (
     <div style={{backgroundColor: "#fff"}}>
     <div className="wrapper"
-         style={{textAlign: "initial", maxWidth: "1000px", color: "#000", paddingTop: "45px", margin: "0 auto", fontFamily: "sans-serif", lineHeight: "2em"}}>
+         style={{textAlign: "initial", maxWidth: "80%", color: "#000", paddingTop: "45px", margin: "0 auto", fontFamily: "sans-serif", lineHeight: "2em"}}>
       <center><h1 style={{fontWeight: "bold", fontSize: "20px", color: "red", marginBottom: "25px"}}>Website Terms and
         Conditions</h1></center>
 

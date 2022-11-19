@@ -4,7 +4,7 @@ const Privacy = () => {
   return (
     <div style={{backgroundColor: "#fff", width: "100%"}}>
       <div className="wrapper"
-           style={{textAlign: "initial", color: "#000", maxWidth: "1000px", margin: "0 auto", fontFamily: "sans-serif", lineHeight: "1.5em"}}>
+           style={{textAlign: "initial", color: "#000", maxWidth: "80%", margin: "0 auto", fontFamily: "sans-serif", lineHeight: "1.5em"}}>
 
         <center>
         </center>
