@@ -4,8 +4,9 @@ import Video from "../../components/Video/Video";
 import Footer from "../../components/Footer/Footer";
 
 import s from "./Landing.module.scss";
+import Timer from "./components/Timer/Timer";
 
-const Landing = () => {
+const Landing = ({timerActive, setTimerActive}) => {
 
   return (
     <>
@@ -17,7 +18,7 @@ const Landing = () => {
         </header>
       </Header>
       <Video src={"https://www.youtube.com/embed/l3_HA0lBPu0"}/>
-      <Form/>
+      {timerActive ? < Timer timerActive={timerActive} setTimerActive={setTimerActive}/> : <Form/>}
       <Footer/>
     </>
   )

@@ -6,7 +6,7 @@ import NextPageBtn from "../Landing/components/NextPageBtn/NextPageBtn";
 import s from './PreLanding.module.scss'
 import Footer from "../../components/Footer/Footer";
 
-const PreLanding = () => {
+const PreLanding = ({setTimerActive}) => {
   const [questions, setQuestions] = useState(true)
 
   return (
@@ -16,7 +16,7 @@ const PreLanding = () => {
       </Header>
       <Video src={"https://www.youtube.com/embed/1Vatp8VLGcs"}/>
       {questions ?
-        <Question setQuestions={setQuestions}/> : <NextPageBtn/>}
+        <Question setQuestions={setQuestions}/> : <NextPageBtn setTimerActive={setTimerActive}/>}
       <Footer/>
     </>
   );

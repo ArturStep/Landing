@@ -82,6 +82,16 @@
   }
 }
 
+.error {
+  padding: 5px;
+  width: 250px;
+
+  color: #fff;
+  background-color: #ff0000;
+
+  font-weight: bold;
+}
+
 @keyframes swing {
   20%, 60% {
     -webkit-transform: rotate(5deg);
@@ -102,6 +112,16 @@
 @media only screen and (max-device-width: 900px) {
   .form {
     width: 80%;
+  }
+}
+
+@media only screen and (max-device-width: 400px) {
+  .form {
+    form {
+      label {
+        right: 85px;
+      }
+    }
   }
 }
 
